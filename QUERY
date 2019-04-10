@@ -1,0 +1,5 @@
+SELECT name, modify_date, create_date
+FROM sys.objects
+WHERE type = 'P' 
+order by modify_date desc
+--AND modify_date = create_date
