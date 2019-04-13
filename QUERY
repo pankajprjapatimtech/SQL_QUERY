@@ -3,3 +3,8 @@ FROM sys.objects
 WHERE type = 'P' 
 order by modify_date desc
 --AND modify_date = create_date
+
+--------------------------------------------------------------
+
+EXEC sp_rename 'us_b2c_get_user_details', 'us_b2c_Update_Active_user_details';
+
